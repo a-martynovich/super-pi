@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">Super Pi</string>
+	<string name="not_ok">-</string>
+	<string name="result_16k">Not calculated.</string>
+	<string name="unit_16k">[16K]</string>
+	<string name="result_32k">Not calculated.</string>
+	<string name="unit_32k">[32K]</string>
+	<string name="result_64k">Not calculated.</string>
+	<string name="unit_64k">[64K]</string>
+	<string name="result_128k">Not calculated.</string>
+	<string name="unit_128k">[128K]</string>
+	<string name="result_256k">Not calculated.</string>
+	<string name="unit_256k">[256K]</string>
+	<string name="result_512k">Not calculated.</string>
+	<string name="unit_512k">[512K]</string>
+	<string name="result_1m">Not calculated.</string>
+	<string name="unit_1m">[1M]</string>
+	<string name="result_2m">Not calculated.</string>
+	<string name="unit_2m">[2M]</string>
+	<string name="result_4m">Not calculated.</string>
+	<string name="unit_4m">[4M]</string>
+	<string name="select_digit">Select digits of Pi to be calculated.</string>
+	<string name="real_memory">Real Memory : </string>
+	<string name="available_real_memory">Available Real Memory : </string>
+	<string name="allocated_memory">Allocated Memory : </string>
+</resources>
