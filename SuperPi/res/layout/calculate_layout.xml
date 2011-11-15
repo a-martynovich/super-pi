@@ -9,7 +9,16 @@
 
 		<TableRow android:layout_width="fill_parent"
 			android:layout_height="wrap_content" android:background="#000000"
-			android:layout_marginBottom="1dip">
+			android:layout_marginBottom="1dip" android:padding="2dip">
+			<TextView android:id="@+id/txtDigitInfo"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:text="Calculation Start." />
+			<TextView android:text="" />
+		</TableRow>
+
+		<TableRow android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:background="#000000"
+			android:layout_marginBottom="1dip" android:padding="2dip">
 			<TextView android:layout_width="wrap_content"
 				android:layout_height="wrap_content" android:text="@string/real_memory" />
 			<TextView android:id="@+id/txtRealMemory"
@@ -19,7 +28,7 @@
 
 		<TableRow android:layout_width="fill_parent"
 			android:layout_height="wrap_content" android:background="#000000"
-			android:layout_marginBottom="1dip">
+			android:layout_marginBottom="1dip" android:padding="2dip">
 			<TextView android:layout_width="wrap_content"
 				android:layout_height="wrap_content" android:text="@string/available_real_memory" />
 			<TextView android:id="@+id/txtAvailableRealMemory"
@@ -29,10 +38,10 @@
 
 		<TableRow android:layout_width="fill_parent"
 			android:layout_height="wrap_content" android:background="#000000"
-			android:layout_marginBottom="1dip">
+			android:layout_marginBottom="1dip" android:padding="2dip">
 			<TextView android:layout_width="wrap_content"
-				android:layout_height="wrap_content" android:text="@string/allocated_memory" />
-			<TextView android:id="@+id/txtAllocatedMemory"
+				android:layout_height="wrap_content" android:text="@string/free_memory" />
+			<TextView android:id="@+id/txtFreeMemory"
 				android:layout_width="wrap_content" android:layout_height="wrap_content"
 				android:text="0" />
 		</TableRow>

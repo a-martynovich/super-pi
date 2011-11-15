@@ -13,8 +13,19 @@ public class CalculationResultActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.calculate_layout);
+		initializeCalculationOfDigit();
 		readTotalRam();
-		
+	}
+
+	private void initializeCalculationOfDigit() {
+		int selectedDigit;
+		try {
+			selectedDigit = getIntent().getExtras().getInt("Digit");
+		} catch (Exception e) {
+			selectedDigit = 16;
+		}
+		TextView txtDigitInfo = (TextView) findViewById(R.id.txtDigitInfo);
+		txtDigitInfo.setText(String.valueOf(selectedDigit) + "K Calculation start.");
 	}
 
 	public float readTotalRam() {
@@ -25,16 +36,16 @@ public class CalculationResultActivity extends Activity {
 			String[] totrm = load.split(" kB");
 			String[] trm = totrm[0].split(" ");
 			tm = Integer.parseInt(trm[trm.length - 1]);
-			tm = (tm / 1024.0f);
+			TextView txtRealMemory = (TextView) findViewById(R.id.txtRealMemory);
+			txtRealMemory.setText(String.valueOf(tm) + " kB");
 			TextView txtAvailableMemory = (TextView) findViewById(R.id.txtAvailableRealMemory);
-			txtAvailableMemory.setText(String.valueOf(tm));
+			txtAvailableMemory.setText(String.valueOf(tm) + " kB");
 			load = reader.readLine();
 			totrm = load.split(" kB");
 			trm = totrm[0].split(" ");
 			tm = Integer.parseInt(trm[trm.length - 1]);
-			tm = (tm / 1024.0f);
-			TextView txtM = (TextView) findViewById(R.id.txtAllocatedMemory);
-			txtM.setText(String.valueOf(tm));
+			TextView txtFreeMemory = (TextView) findViewById(R.id.txtFreeMemory);
+			txtFreeMemory.setText(String.valueOf(tm) + "kB");
 		} catch (IOException ex) {
 			ex.printStackTrace();
 		}

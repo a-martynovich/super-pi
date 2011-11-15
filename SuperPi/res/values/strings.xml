@@ -23,5 +23,5 @@
 	<string name="select_digit">Select digits of Pi to be calculated.</string>
 	<string name="real_memory">Real Memory : </string>
 	<string name="available_real_memory">Available Real Memory : </string>
-	<string name="allocated_memory">Allocated Memory : </string>
+	<string name="free_memory">Free Memory : </string>
 </resources>

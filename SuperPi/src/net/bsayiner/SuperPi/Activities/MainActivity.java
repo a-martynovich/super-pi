@@ -13,10 +13,13 @@ import android.view.View;
 
 public class MainActivity extends Activity {
 
+	private Intent calculationIntent;
+
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main);
+		calculationIntent = new Intent(this, CalculationResultActivity.class);
 	}
 
 	public void btnCalculateClicked(View view) {
@@ -28,16 +31,18 @@ public class MainActivity extends Activity {
 	protected Dialog onCreateDialog(int id) {
 		AlertDialog.Builder builder = new AlertDialog.Builder(this);
 		builder.setTitle("Select digits of Pi to be calculated.");
-		builder.setPositiveButton("Ok", new OnClickListener() {
-			public void onClick(DialogInterface dialog, int which) {
-				// TODO Auto-generated method stub
-				Intent intent = new Intent(MainActivity.this, CalculationResultActivity.class);
-				startActivity(intent);
-			}
-		});
 		builder.setSingleChoiceItems(getResources().getStringArray(R.array.unit_names), 0, new OnClickListener() {
 			public void onClick(DialogInterface dialog, int which) {
 				// TODO Auto-generated method stub
+				int selectedDigit = (int) Math.pow(2, which + 4);
+				Log.i("Digit Selected", String.valueOf(selectedDigit));
+				calculationIntent.putExtra("Digit", selectedDigit);
+			}
+		});
+		builder.setPositiveButton("Ok", new OnClickListener() {
+			public void onClick(DialogInterface dialog, int which) {
+				// TODO Auto-generated method stub
+				startActivity(calculationIntent);
 			}
 		});
 		return builder.create();
