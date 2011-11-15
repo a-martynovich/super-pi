@@ -15,22 +15,34 @@ public final class R {
     }
     public static final class drawable {
         public static final int icon=0x7f020000;
+        public static final int not_ok=0x7f020001;
+        public static final int ok=0x7f020002;
     }
     public static final class id {
-        public static final int btnCalculate=0x7f060004;
+        public static final int btnCalculate=0x7f06000e;
+        public static final int imgNotOk128k=0x7f060008;
+        public static final int imgNotOk16k=0x7f060005;
+        public static final int imgNotOk1m=0x7f06000b;
+        public static final int imgNotOk256k=0x7f060009;
+        public static final int imgNotOk2m=0x7f06000c;
+        public static final int imgNotOk32k=0x7f060006;
+        public static final int imgNotOk4m=0x7f06000d;
+        public static final int imgNotOk512k=0x7f06000a;
+        public static final int imgNotOk64k=0x7f060007;
         public static final int layout_main=0x7f060000;
-        public static final int txtAllocatedMemory=0x7f060003;
-        public static final int txtAvailableRealMemory=0x7f060002;
-        public static final int txtRealMemory=0x7f060001;
+        public static final int txtAvailableRealMemory=0x7f060003;
+        public static final int txtDigitInfo=0x7f060001;
+        public static final int txtFreeMemory=0x7f060004;
+        public static final int txtRealMemory=0x7f060002;
     }
     public static final class layout {
         public static final int calculate_layout=0x7f030000;
         public static final int main=0x7f030001;
     }
     public static final class string {
-        public static final int allocated_memory=0x7f050017;
         public static final int app_name=0x7f050000;
         public static final int available_real_memory=0x7f050016;
+        public static final int free_memory=0x7f050017;
         public static final int not_ok=0x7f050001;
         public static final int real_memory=0x7f050015;
         public static final int result_128k=0x7f050008;
