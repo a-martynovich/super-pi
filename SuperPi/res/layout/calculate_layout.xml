@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
 	android:layout_width="fill_parent" android:layout_height="fill_parent"
-	android:scrollbars="vertical">
+	android:scrollbars="vertical" android:background="@drawable/background">
 
 	<TableLayout android:id="@+id/layout_main"
 		android:layout_width="fill_parent" android:layout_height="fill_parent"
@@ -10,18 +10,9 @@
 		<TableRow android:layout_width="fill_parent"
 			android:layout_height="wrap_content" android:background="#000000"
 			android:layout_marginBottom="1dip" android:padding="2dip">
-			<TextView android:id="@+id/txtDigitInfo"
-				android:layout_width="wrap_content" android:layout_height="wrap_content"
-				android:text="Calculation Start." />
-			<TextView android:text="" />
-		</TableRow>
-
-		<TableRow android:layout_width="fill_parent"
-			android:layout_height="wrap_content" android:background="#000000"
-			android:layout_marginBottom="1dip" android:padding="2dip">
 			<TextView android:layout_width="wrap_content"
-				android:layout_height="wrap_content" android:text="@string/real_memory" />
-			<TextView android:id="@+id/txtRealMemory"
+				android:layout_height="wrap_content" android:text="@string/memory_block_size" />
+			<TextView android:id="@+id/txtMemoryBlockSize"
 				android:layout_width="wrap_content" android:layout_height="wrap_content"
 				android:text="0" />
 		</TableRow>
@@ -30,8 +21,8 @@
 			android:layout_height="wrap_content" android:background="#000000"
 			android:layout_marginBottom="1dip" android:padding="2dip">
 			<TextView android:layout_width="wrap_content"
-				android:layout_height="wrap_content" android:text="@string/available_real_memory" />
-			<TextView android:id="@+id/txtAvailableRealMemory"
+				android:layout_height="wrap_content" android:text="@string/cache_l1_size" />
+			<TextView android:id="@+id/txtCacheL1Size"
 				android:layout_width="wrap_content" android:layout_height="wrap_content"
 				android:text="0" />
 		</TableRow>
@@ -40,11 +31,53 @@
 			android:layout_height="wrap_content" android:background="#000000"
 			android:layout_marginBottom="1dip" android:padding="2dip">
 			<TextView android:layout_width="wrap_content"
-				android:layout_height="wrap_content" android:text="@string/free_memory" />
-			<TextView android:id="@+id/txtFreeMemory"
+				android:layout_height="wrap_content" android:text="@string/cache_l2_size" />
+			<TextView android:id="@+id/txtCacheL2Size"
 				android:layout_width="wrap_content" android:layout_height="wrap_content"
 				android:text="0" />
 		</TableRow>
+
+		<TableRow android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:background="#000000"
+			android:layout_marginBottom="1dip" android:padding="2dip">
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="@string/cache_burst" />
+			<TextView android:id="@+id/txtCacheBurst"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:text="0" />
+		</TableRow>
+
+		<TableRow android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:background="#000000"
+			android:layout_marginBottom="1dip" android:padding="2dip">
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="@string/block_size" />
+			<TextView android:id="@+id/txtBlockSize"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:text="0" />
+		</TableRow>
+
+		<TableRow android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:background="#000000"
+			android:layout_marginBottom="1dip" android:padding="2dip">
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="@string/number_of_processor" />
+			<TextView android:id="@+id/txtNumberOfProcessor"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:text="0" />
+		</TableRow>
+
+		<LinearLayout android:id="@+id/layout_iteration_times"
+			android:orientation="vertical" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:background="#000000"
+			android:padding="2dip" android:layout_marginBottom="1dip">
+			<TextView android:id="@+id/txtInfoHeader"
+				android:layout_width="fill_parent" android:layout_height="wrap_content" />
+			<TextView android:id="@+id/txtCalculationAlgorithm"
+				android:layout_width="fill_parent" android:layout_height="wrap_content" />
+			<TextView android:id="@+id/txtIterationInfo"
+				android:layout_width="fill_parent" android:layout_height="wrap_content" />
+		</LinearLayout>
 
 	</TableLayout>
 

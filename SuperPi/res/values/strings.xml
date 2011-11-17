@@ -21,7 +21,10 @@
 	<string name="result_4m">Not calculated.</string>
 	<string name="unit_4m">[4M]</string>
 	<string name="select_digit">Select digits of Pi to be calculated.</string>
-	<string name="real_memory">Real Memory : </string>
-	<string name="available_real_memory">Available Real Memory : </string>
-	<string name="free_memory">Free Memory : </string>
+	<string name="memory_block_size">Memory Block Size </string>
+	<string name="cache_l1_size">Cache L1 Size </string>
+	<string name="cache_l2_size">Cache L2 Size </string>
+	<string name="cache_burst">Cache Burst </string>
+	<string name="block_size">Block Size </string>
+	<string name="number_of_processor">Number Of Processor </string>
 </resources>
