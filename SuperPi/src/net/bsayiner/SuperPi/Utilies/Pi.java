@@ -31,12 +31,11 @@ public class Pi {
 	public String getTotalElapsedTimeStamp() {
 		return totalElapsedTimeStamp;
 	}
-	
+
 	private void setTotalElapsedTimeStamp(String totalElapsedTimeStamp) {
 		this.totalElapsedTimeStamp = totalElapsedTimeStamp;
 	}
-	
-	
+
 	public String getIterationTimeStamp() {
 		return iterationTimeStamp;
 	}
@@ -685,7 +684,6 @@ public class Pi {
 
 				time = System.currentTimeMillis() - time;
 
-				Pi.err.println("took " + time / 1000.0 + " seconds");
 				setIterationTime("Iteration " + (i + 1) + " took");
 				setIterationTimeStamp(time / 1000.0 + " seconds");
 				calculationResultActivity.getHandler().sendEmptyMessage(3);
@@ -693,16 +691,12 @@ public class Pi {
 
 			checkAlive();
 
-			Pi.err.print("Final value ");
-			Pi.err.flush();
 
 			time = System.currentTimeMillis();
 			a = a.add(b);
 			t = four.multiply(t);
 			Apfloat pi = ApfloatMath.pow(a, 2).divide(t);
 			time = System.currentTimeMillis() - time;
-
-			Pi.err.println("took " + time / 1000.0 + " seconds");
 
 			return pi;
 		}

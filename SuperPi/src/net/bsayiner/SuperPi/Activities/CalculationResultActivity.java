@@ -8,6 +8,7 @@ import net.bsayiner.benchmark.SuperPi.R;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
+import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnClickListener;
 import android.graphics.Color;
@@ -24,6 +25,7 @@ public class CalculationResultActivity extends Activity implements Runnable {
 
 	private int selectedDigit;
 	private Pi pi;
+	private ProgressDialog progressDialog;
 
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -58,6 +60,7 @@ public class CalculationResultActivity extends Activity implements Runnable {
 			public void onClick(DialogInterface dialog, int which) {
 				// TODO Auto-generated method stub
 				new Thread(CalculationResultActivity.this).start();
+				progressDialog = ProgressDialog.show(CalculationResultActivity.this, "", "Calculating Pi digits ...");
 			}
 		});
 		return builder.create();
@@ -67,7 +70,7 @@ public class CalculationResultActivity extends Activity implements Runnable {
 		try {
 			selectedDigit = getIntent().getExtras().getInt("Digit");
 		} catch (Exception e) {
-			selectedDigit = 16;
+			selectedDigit = 2;
 		}
 	}
 
@@ -79,6 +82,7 @@ public class CalculationResultActivity extends Activity implements Runnable {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+		progressDialog.dismiss();
 	}
 
 	private Handler handler = new Handler() {
@@ -118,7 +122,7 @@ public class CalculationResultActivity extends Activity implements Runnable {
 		txtIterationTimeStamp.setText(": " + pi.getTotalElapsedTimeStamp());
 		tableRow.addView(txtIterationTimeStamp);
 		tableLayout.addView(tableRow);
-		Toast.makeText(this, pi.getTotalElapsedTime() + " " + pi.getTotalElapsedTimeStamp(), Toast.LENGTH_LONG).show();
+		Toast.makeText(this, pi.getInfoHeader() + " at " + pi.getTotalElapsedTime() + " " + pi.getTotalElapsedTimeStamp(), Toast.LENGTH_LONG).show();
 	}
 
 	private void setIterationTime() {
@@ -150,8 +154,8 @@ public class CalculationResultActivity extends Activity implements Runnable {
 		return handler;
 	}
 
-	private void setInfoHeader(String inforHeader) {
+	private void setInfoHeader(String infoHeader) {
 		TextView txtInfoHeader = (TextView) findViewById(R.id.txtInfoHeader);
-		txtInfoHeader.setText(inforHeader);
+		txtInfoHeader.setText(infoHeader);
 	}
 }

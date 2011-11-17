@@ -20,6 +20,7 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main);
 		calculationIntent = new Intent(this, CalculationResultActivity.class);
+		System.err.println(getFilesDir());
 	}
 
 	public void btnCalculateClicked(View view) {
@@ -34,7 +35,7 @@ public class MainActivity extends Activity {
 		builder.setSingleChoiceItems(getResources().getStringArray(R.array.unit_names), 0, new OnClickListener() {
 			public void onClick(DialogInterface dialog, int which) {
 				// TODO Auto-generated method stub
-				int selectedDigit = (int) Math.pow(2, which + 4);
+				int selectedDigit = (int) Math.pow(2, which + 1);
 				Log.i("Digit Selected", String.valueOf(selectedDigit));
 				calculationIntent.putExtra("Digit", selectedDigit);
 			}
