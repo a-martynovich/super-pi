@@ -2,6 +2,12 @@
 <resources>
 	<string name="app_name">Super Pi</string>
 	<string name="not_ok">-</string>
+	<string name="result_2k">Not calculated.</string>
+	<string name="unit_2k">[2K]</string>
+	<string name="result_4k">Not calculated.</string>
+	<string name="unit_4k">[4K]</string>
+	<string name="result_8k">Not calculated.</string>
+	<string name="unit_8k">[8K]</string>
 	<string name="result_16k">Not calculated.</string>
 	<string name="unit_16k">[16K]</string>
 	<string name="result_32k">Not calculated.</string>
