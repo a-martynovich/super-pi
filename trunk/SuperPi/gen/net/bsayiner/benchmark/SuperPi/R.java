@@ -14,26 +14,33 @@ public final class R {
     public static final class attr {
     }
     public static final class drawable {
-        public static final int icon=0x7f020000;
-        public static final int not_ok=0x7f020001;
-        public static final int ok=0x7f020002;
+        public static final int background=0x7f020000;
+        public static final int icon=0x7f020001;
+        public static final int not_ok=0x7f020002;
+        public static final int ok=0x7f020003;
     }
     public static final class id {
-        public static final int btnCalculate=0x7f06000e;
-        public static final int imgNotOk128k=0x7f060008;
-        public static final int imgNotOk16k=0x7f060005;
-        public static final int imgNotOk1m=0x7f06000b;
-        public static final int imgNotOk256k=0x7f060009;
-        public static final int imgNotOk2m=0x7f06000c;
-        public static final int imgNotOk32k=0x7f060006;
-        public static final int imgNotOk4m=0x7f06000d;
-        public static final int imgNotOk512k=0x7f06000a;
-        public static final int imgNotOk64k=0x7f060007;
+        public static final int btnCalculate=0x7f060014;
+        public static final int imgNotOk128k=0x7f06000e;
+        public static final int imgNotOk16k=0x7f06000b;
+        public static final int imgNotOk1m=0x7f060011;
+        public static final int imgNotOk256k=0x7f06000f;
+        public static final int imgNotOk2m=0x7f060012;
+        public static final int imgNotOk32k=0x7f06000c;
+        public static final int imgNotOk4m=0x7f060013;
+        public static final int imgNotOk512k=0x7f060010;
+        public static final int imgNotOk64k=0x7f06000d;
+        public static final int layout_iteration_times=0x7f060007;
         public static final int layout_main=0x7f060000;
-        public static final int txtAvailableRealMemory=0x7f060003;
-        public static final int txtDigitInfo=0x7f060001;
-        public static final int txtFreeMemory=0x7f060004;
-        public static final int txtRealMemory=0x7f060002;
+        public static final int txtBlockSize=0x7f060005;
+        public static final int txtCacheBurst=0x7f060004;
+        public static final int txtCacheL1Size=0x7f060002;
+        public static final int txtCacheL2Size=0x7f060003;
+        public static final int txtCalculationAlgorithm=0x7f060009;
+        public static final int txtInfoHeader=0x7f060008;
+        public static final int txtIterationInfo=0x7f06000a;
+        public static final int txtMemoryBlockSize=0x7f060001;
+        public static final int txtNumberOfProcessor=0x7f060006;
     }
     public static final class layout {
         public static final int calculate_layout=0x7f030000;
@@ -41,10 +48,13 @@ public final class R {
     }
     public static final class string {
         public static final int app_name=0x7f050000;
-        public static final int available_real_memory=0x7f050016;
-        public static final int free_memory=0x7f050017;
+        public static final int block_size=0x7f050019;
+        public static final int cache_burst=0x7f050018;
+        public static final int cache_l1_size=0x7f050016;
+        public static final int cache_l2_size=0x7f050017;
+        public static final int memory_block_size=0x7f050015;
         public static final int not_ok=0x7f050001;
-        public static final int real_memory=0x7f050015;
+        public static final int number_of_processor=0x7f05001a;
         public static final int result_128k=0x7f050008;
         public static final int result_16k=0x7f050002;
         public static final int result_1m=0x7f05000e;
