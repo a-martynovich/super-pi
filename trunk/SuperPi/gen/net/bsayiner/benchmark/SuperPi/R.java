@@ -13,6 +13,9 @@ public final class R {
     }
     public static final class attr {
     }
+    public static final class color {
+        public static final int layout_text_color=0x7f050000;
+    }
     public static final class drawable {
         public static final int background=0x7f020000;
         public static final int icon=0x7f020001;
@@ -20,27 +23,27 @@ public final class R {
         public static final int ok=0x7f020003;
     }
     public static final class id {
-        public static final int btnCalculate=0x7f060014;
-        public static final int imgNotOk128k=0x7f06000e;
-        public static final int imgNotOk16k=0x7f06000b;
-        public static final int imgNotOk1m=0x7f060011;
-        public static final int imgNotOk256k=0x7f06000f;
-        public static final int imgNotOk2m=0x7f060012;
-        public static final int imgNotOk32k=0x7f06000c;
-        public static final int imgNotOk4m=0x7f060013;
-        public static final int imgNotOk512k=0x7f060010;
-        public static final int imgNotOk64k=0x7f06000d;
-        public static final int layout_iteration_times=0x7f060007;
-        public static final int layout_main=0x7f060000;
-        public static final int txtBlockSize=0x7f060005;
-        public static final int txtCacheBurst=0x7f060004;
-        public static final int txtCacheL1Size=0x7f060002;
-        public static final int txtCacheL2Size=0x7f060003;
-        public static final int txtCalculationAlgorithm=0x7f060009;
-        public static final int txtInfoHeader=0x7f060008;
-        public static final int txtIterationInfo=0x7f06000a;
-        public static final int txtMemoryBlockSize=0x7f060001;
-        public static final int txtNumberOfProcessor=0x7f060006;
+        public static final int btnCalculate=0x7f080014;
+        public static final int imgNotOk128k=0x7f08000e;
+        public static final int imgNotOk16k=0x7f08000b;
+        public static final int imgNotOk1m=0x7f080011;
+        public static final int imgNotOk256k=0x7f08000f;
+        public static final int imgNotOk2m=0x7f080012;
+        public static final int imgNotOk32k=0x7f08000c;
+        public static final int imgNotOk4m=0x7f080013;
+        public static final int imgNotOk512k=0x7f080010;
+        public static final int imgNotOk64k=0x7f08000d;
+        public static final int layout_iteration_times=0x7f080007;
+        public static final int layout_main=0x7f080000;
+        public static final int txtBlockSize=0x7f080005;
+        public static final int txtCacheBurst=0x7f080004;
+        public static final int txtCacheL1Size=0x7f080002;
+        public static final int txtCacheL2Size=0x7f080003;
+        public static final int txtCalculationAlgorithm=0x7f080009;
+        public static final int txtInfoHeader=0x7f080008;
+        public static final int txtIterationInfo=0x7f08000a;
+        public static final int txtMemoryBlockSize=0x7f080001;
+        public static final int txtNumberOfProcessor=0x7f080006;
     }
     public static final class layout {
         public static final int calculate_layout=0x7f030000;
@@ -48,38 +51,41 @@ public final class R {
         public static final int splash_layout=0x7f030002;
     }
     public static final class string {
-        public static final int app_name=0x7f050000;
-        public static final int block_size=0x7f05001f;
-        public static final int cache_burst=0x7f05001e;
-        public static final int cache_l1_size=0x7f05001c;
-        public static final int cache_l2_size=0x7f05001d;
-        public static final int memory_block_size=0x7f05001b;
-        public static final int not_ok=0x7f050001;
-        public static final int number_of_processor=0x7f050020;
-        public static final int result_128k=0x7f05000e;
-        public static final int result_16k=0x7f050008;
-        public static final int result_1m=0x7f050014;
-        public static final int result_256k=0x7f050010;
-        public static final int result_2k=0x7f050002;
-        public static final int result_2m=0x7f050016;
-        public static final int result_32k=0x7f05000a;
-        public static final int result_4k=0x7f050004;
-        public static final int result_4m=0x7f050018;
-        public static final int result_512k=0x7f050012;
-        public static final int result_64k=0x7f05000c;
-        public static final int result_8k=0x7f050006;
-        public static final int select_digit=0x7f05001a;
-        public static final int unit_128k=0x7f05000f;
-        public static final int unit_16k=0x7f050009;
-        public static final int unit_1m=0x7f050015;
-        public static final int unit_256k=0x7f050011;
-        public static final int unit_2k=0x7f050003;
-        public static final int unit_2m=0x7f050017;
-        public static final int unit_32k=0x7f05000b;
-        public static final int unit_4k=0x7f050005;
-        public static final int unit_4m=0x7f050019;
-        public static final int unit_512k=0x7f050013;
-        public static final int unit_64k=0x7f05000d;
-        public static final int unit_8k=0x7f050007;
+        public static final int app_name=0x7f070000;
+        public static final int block_size=0x7f07001f;
+        public static final int cache_burst=0x7f07001e;
+        public static final int cache_l1_size=0x7f07001c;
+        public static final int cache_l2_size=0x7f07001d;
+        public static final int memory_block_size=0x7f07001b;
+        public static final int not_ok=0x7f070001;
+        public static final int number_of_processor=0x7f070020;
+        public static final int result_128k=0x7f07000e;
+        public static final int result_16k=0x7f070008;
+        public static final int result_1m=0x7f070014;
+        public static final int result_256k=0x7f070010;
+        public static final int result_2k=0x7f070002;
+        public static final int result_2m=0x7f070016;
+        public static final int result_32k=0x7f07000a;
+        public static final int result_4k=0x7f070004;
+        public static final int result_4m=0x7f070018;
+        public static final int result_512k=0x7f070012;
+        public static final int result_64k=0x7f07000c;
+        public static final int result_8k=0x7f070006;
+        public static final int select_digit=0x7f07001a;
+        public static final int unit_128k=0x7f07000f;
+        public static final int unit_16k=0x7f070009;
+        public static final int unit_1m=0x7f070015;
+        public static final int unit_256k=0x7f070011;
+        public static final int unit_2k=0x7f070003;
+        public static final int unit_2m=0x7f070017;
+        public static final int unit_32k=0x7f07000b;
+        public static final int unit_4k=0x7f070005;
+        public static final int unit_4m=0x7f070019;
+        public static final int unit_512k=0x7f070013;
+        public static final int unit_64k=0x7f07000d;
+        public static final int unit_8k=0x7f070007;
+    }
+    public static final class style {
+        public static final int layout_text_fonts=0x7f060000;
     }
 }

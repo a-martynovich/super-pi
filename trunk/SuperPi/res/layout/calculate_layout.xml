@@ -11,60 +11,72 @@
 			android:layout_height="wrap_content" android:background="#000000"
 			android:layout_marginBottom="1dip" android:padding="2dip">
 			<TextView android:layout_width="wrap_content"
-				android:layout_height="wrap_content" android:text="@string/memory_block_size" />
+				android:layout_height="wrap_content" android:text="@string/memory_block_size"
+				android:textColor="@color/layout_text_color" android:typeface="monospace" />
 			<TextView android:id="@+id/txtMemoryBlockSize"
 				android:layout_width="wrap_content" android:layout_height="wrap_content"
-				android:text="0" />
+				android:text="0" android:textColor="@color/layout_text_color"
+				android:typeface="monospace" />
 		</TableRow>
 
 		<TableRow android:layout_width="fill_parent"
 			android:layout_height="wrap_content" android:background="#000000"
 			android:layout_marginBottom="1dip" android:padding="2dip">
 			<TextView android:layout_width="wrap_content"
-				android:layout_height="wrap_content" android:text="@string/cache_l1_size" />
+				android:layout_height="wrap_content" android:text="@string/cache_l1_size"
+				android:textColor="@color/layout_text_color" android:typeface="monospace" />
 			<TextView android:id="@+id/txtCacheL1Size"
 				android:layout_width="wrap_content" android:layout_height="wrap_content"
-				android:text="0" />
+				android:text="0" android:textColor="@color/layout_text_color"
+				android:typeface="monospace" />
 		</TableRow>
 
 		<TableRow android:layout_width="fill_parent"
 			android:layout_height="wrap_content" android:background="#000000"
 			android:layout_marginBottom="1dip" android:padding="2dip">
 			<TextView android:layout_width="wrap_content"
-				android:layout_height="wrap_content" android:text="@string/cache_l2_size" />
+				android:layout_height="wrap_content" android:text="@string/cache_l2_size"
+				android:textColor="@color/layout_text_color" android:typeface="monospace" />
 			<TextView android:id="@+id/txtCacheL2Size"
 				android:layout_width="wrap_content" android:layout_height="wrap_content"
-				android:text="0" />
+				android:text="0" android:textColor="@color/layout_text_color"
+				android:typeface="monospace" />
 		</TableRow>
 
 		<TableRow android:layout_width="fill_parent"
 			android:layout_height="wrap_content" android:background="#000000"
 			android:layout_marginBottom="1dip" android:padding="2dip">
 			<TextView android:layout_width="wrap_content"
-				android:layout_height="wrap_content" android:text="@string/cache_burst" />
+				android:layout_height="wrap_content" android:text="@string/cache_burst"
+				android:textColor="@color/layout_text_color" android:typeface="monospace" />
 			<TextView android:id="@+id/txtCacheBurst"
 				android:layout_width="wrap_content" android:layout_height="wrap_content"
-				android:text="0" />
+				android:text="0" android:textColor="@color/layout_text_color"
+				android:typeface="monospace" />
 		</TableRow>
 
 		<TableRow android:layout_width="fill_parent"
 			android:layout_height="wrap_content" android:background="#000000"
 			android:layout_marginBottom="1dip" android:padding="2dip">
 			<TextView android:layout_width="wrap_content"
-				android:layout_height="wrap_content" android:text="@string/block_size" />
+				android:layout_height="wrap_content" android:text="@string/block_size"
+				android:textColor="@color/layout_text_color" android:typeface="monospace" />
 			<TextView android:id="@+id/txtBlockSize"
 				android:layout_width="wrap_content" android:layout_height="wrap_content"
-				android:text="0" />
+				android:text="0" android:textColor="@color/layout_text_color"
+				android:typeface="monospace" />
 		</TableRow>
 
 		<TableRow android:layout_width="fill_parent"
 			android:layout_height="wrap_content" android:background="#000000"
 			android:layout_marginBottom="1dip" android:padding="2dip">
 			<TextView android:layout_width="wrap_content"
-				android:layout_height="wrap_content" android:text="@string/number_of_processor" />
+				android:layout_height="wrap_content" android:text="@string/number_of_processor"
+				android:textColor="@color/layout_text_color" android:typeface="monospace" />
 			<TextView android:id="@+id/txtNumberOfProcessor"
 				android:layout_width="wrap_content" android:layout_height="wrap_content"
-				android:text="0" />
+				android:text="0" android:textColor="@color/layout_text_color"
+				android:typeface="monospace" />
 		</TableRow>
 
 		<LinearLayout android:id="@+id/layout_iteration_times"
@@ -72,11 +84,14 @@
 			android:layout_height="wrap_content" android:background="#000000"
 			android:padding="2dip" android:layout_marginBottom="1dip">
 			<TextView android:id="@+id/txtInfoHeader"
-				android:layout_width="fill_parent" android:layout_height="wrap_content" />
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:textColor="@color/layout_text_color" android:typeface="monospace" />
 			<TextView android:id="@+id/txtCalculationAlgorithm"
-				android:layout_width="fill_parent" android:layout_height="wrap_content" />
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:textColor="@color/layout_text_color" android:typeface="monospace" />
 			<TextView android:id="@+id/txtIterationInfo"
-				android:layout_width="fill_parent" android:layout_height="wrap_content" />
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:textColor="@color/layout_text_color" android:typeface="monospace" />
 		</LinearLayout>
 
 	</TableLayout>

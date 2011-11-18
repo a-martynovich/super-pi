@@ -16,10 +16,12 @@
 				android:layout_width="0dp" />
 			<TextView android:layout_height="wrap_content" android:text="@string/result_2k"
 				android:layout_gravity="center_vertical" android:layout_weight="1"
-				android:layout_width="0dp" />
+				android:layout_width="0dp" android:textColor="@color/layout_text_color"
+				android:typeface="monospace" />
 			<TextView android:layout_height="wrap_content" android:text="@string/unit_2k"
 				android:layout_gravity="center_vertical" android:layout_weight="1"
-				android:layout_width="0dp" />
+				android:layout_width="0dp" android:textColor="@color/layout_text_color"
+				android:typeface="monospace" />
 		</TableRow>
 
 		<TableRow android:layout_width="fill_parent"
@@ -31,10 +33,12 @@
 				android:layout_width="0dp" />
 			<TextView android:layout_height="wrap_content" android:text="@string/result_4k"
 				android:layout_gravity="center_vertical" android:layout_weight="1"
-				android:layout_width="0dp" />
+				android:layout_width="0dp" android:textColor="@color/layout_text_color"
+				android:typeface="monospace" />
 			<TextView android:layout_height="wrap_content" android:text="@string/unit_4k"
 				android:layout_gravity="center_vertical" android:layout_weight="1"
-				android:layout_width="0dp" />
+				android:layout_width="0dp" android:textColor="@color/layout_text_color"
+				android:typeface="monospace" />
 		</TableRow>
 
 		<TableRow android:layout_width="fill_parent"
@@ -46,10 +50,12 @@
 				android:layout_width="0dp" />
 			<TextView android:layout_height="wrap_content" android:text="@string/result_8k"
 				android:layout_gravity="center_vertical" android:layout_weight="1"
-				android:layout_width="0dp" />
+				android:layout_width="0dp" android:textColor="@color/layout_text_color"
+				android:typeface="monospace" />
 			<TextView android:layout_height="wrap_content" android:text="@string/unit_8k"
 				android:layout_gravity="center_vertical" android:layout_weight="1"
-				android:layout_width="0dp" />
+				android:layout_width="0dp" android:textColor="@color/layout_text_color"
+				android:typeface="monospace" />
 		</TableRow>
 
 		<TableRow android:layout_width="fill_parent"
@@ -61,10 +67,12 @@
 				android:layout_width="0dp" />
 			<TextView android:layout_height="wrap_content" android:text="@string/result_16k"
 				android:layout_gravity="center_vertical" android:layout_weight="1"
-				android:layout_width="0dp" />
+				android:layout_width="0dp" android:textColor="@color/layout_text_color"
+				android:typeface="monospace" />
 			<TextView android:layout_height="wrap_content" android:text="@string/unit_16k"
 				android:layout_gravity="center_vertical" android:layout_weight="1"
-				android:layout_width="0dp" />
+				android:layout_width="0dp" android:textColor="@color/layout_text_color"
+				android:typeface="monospace" />
 		</TableRow>
 
 		<TableRow android:layout_width="fill_parent"
@@ -76,10 +84,12 @@
 				android:layout_width="0dp" />
 			<TextView android:layout_height="wrap_content" android:text="@string/result_32k"
 				android:layout_gravity="center_vertical" android:layout_weight="1"
-				android:layout_width="0dp" />
+				android:layout_width="0dp" android:textColor="@color/layout_text_color"
+				android:typeface="monospace" />
 			<TextView android:layout_height="wrap_content" android:text="@string/unit_32k"
 				android:layout_gravity="center_vertical" android:layout_weight="1"
-				android:layout_width="0dp" />
+				android:layout_width="0dp" android:textColor="@color/layout_text_color"
+				android:typeface="monospace" />
 		</TableRow>
 
 		<TableRow android:layout_width="fill_parent"
@@ -91,10 +101,12 @@
 				android:layout_width="0dp" />
 			<TextView android:layout_height="wrap_content" android:text="@string/result_64k"
 				android:layout_gravity="center_vertical" android:layout_weight="1"
-				android:layout_width="0dp" />
+				android:layout_width="0dp" android:textColor="@color/layout_text_color"
+				android:typeface="monospace" />
 			<TextView android:layout_height="wrap_content" android:text="@string/unit_64k"
 				android:layout_gravity="center_vertical" android:layout_weight="1"
-				android:layout_width="0dp" />
+				android:layout_width="0dp" android:textColor="@color/layout_text_color"
+				android:typeface="monospace" />
 		</TableRow>
 
 		<TableRow android:layout_width="fill_parent"
@@ -106,10 +118,12 @@
 				android:layout_width="0dp" />
 			<TextView android:layout_height="wrap_content" android:text="@string/result_128k"
 				android:layout_gravity="center_vertical" android:layout_weight="1"
-				android:layout_width="0dp" />
+				android:layout_width="0dp" android:textColor="@color/layout_text_color"
+				android:typeface="monospace" />
 			<TextView android:layout_height="wrap_content" android:text="@string/unit_128k"
 				android:layout_gravity="center_vertical" android:layout_weight="1"
-				android:layout_width="0dp" />
+				android:layout_width="0dp" android:textColor="@color/layout_text_color"
+				android:typeface="monospace" />
 		</TableRow>
 
 		<TableRow android:layout_width="fill_parent"
@@ -121,10 +135,12 @@
 				android:layout_width="0dp" />
 			<TextView android:layout_height="wrap_content" android:text="@string/result_256k"
 				android:layout_gravity="center_vertical" android:layout_weight="1"
-				android:layout_width="0dp" />
+				android:layout_width="0dp" android:textColor="@color/layout_text_color"
+				android:typeface="monospace" />
 			<TextView android:layout_height="wrap_content" android:text="@string/unit_256k"
 				android:layout_gravity="center_vertical" android:layout_weight="1"
-				android:layout_width="0dp" />
+				android:layout_width="0dp" android:textColor="@color/layout_text_color"
+				android:typeface="monospace" />
 		</TableRow>
 
 		<TableRow android:layout_width="fill_parent"
@@ -136,10 +152,12 @@
 				android:layout_width="0dp" />
 			<TextView android:layout_height="wrap_content" android:text="@string/result_512k"
 				android:layout_gravity="center_vertical" android:layout_weight="1"
-				android:layout_width="0dp" />
+				android:layout_width="0dp" android:textColor="@color/layout_text_color"
+				android:typeface="monospace" />
 			<TextView android:layout_height="wrap_content" android:text="@string/unit_512k"
 				android:layout_gravity="center_vertical" android:layout_weight="1"
-				android:layout_width="0dp" />
+				android:layout_width="0dp" android:textColor="@color/layout_text_color"
+				android:typeface="monospace" />
 		</TableRow>
 
 		<LinearLayout android:layout_width="fill_parent"
