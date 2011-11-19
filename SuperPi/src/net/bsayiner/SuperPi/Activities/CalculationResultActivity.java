@@ -1,6 +1,14 @@
 package net.bsayiner.SuperPi.Activities;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.io.StreamCorruptedException;
+import java.util.ArrayList;
+
 import org.apfloat.ApfloatRuntimeException;
 
 import net.bsayiner.SuperPi.Utilies.Pi;
@@ -24,11 +32,14 @@ import android.widget.Toast;
 public class CalculationResultActivity extends Activity implements Runnable {
 
 	private int selectedDigit;
+	private int selectedIndex;
 	private Pi pi;
 	private ProgressDialog progressDialog;
+	private ArrayList<String> recordList;
 
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		readRecordFromFile();
 		setContentView(R.layout.calculate_layout);
 		initializeCalculationOfDigit();
 		pi = new Pi(this);
@@ -58,7 +69,6 @@ public class CalculationResultActivity extends Activity implements Runnable {
 		builder.setMessage("Now start calculate " + String.valueOf(selectedDigit) + "K digit of Pi.");
 		builder.setPositiveButton("Ok", new OnClickListener() {
 			public void onClick(DialogInterface dialog, int which) {
-				// TODO Auto-generated method stub
 				new Thread(CalculationResultActivity.this).start();
 				progressDialog = ProgressDialog.show(CalculationResultActivity.this, "", "Calculating Pi digits ...");
 			}
@@ -69,8 +79,10 @@ public class CalculationResultActivity extends Activity implements Runnable {
 	private void initializeCalculationOfDigit() {
 		try {
 			selectedDigit = getIntent().getExtras().getInt("Digit");
+			selectedIndex = getIntent().getExtras().getInt("Index");
 		} catch (Exception e) {
 			selectedDigit = 2;
+			selectedIndex = 0;
 		}
 	}
 
@@ -127,6 +139,49 @@ public class CalculationResultActivity extends Activity implements Runnable {
 		tableRow.addView(txtIterationTimeStamp);
 		tableLayout.addView(tableRow);
 		Toast.makeText(this, pi.getInfoHeader() + " at " + pi.getTotalElapsedTime() + " " + pi.getTotalElapsedTimeStamp(), Toast.LENGTH_LONG).show();
+		recordList.set(selectedIndex, pi.getTotalElapsedTimeStamp());
+		// Write record to file
+		WriteSettings();
+	}
+
+	// Save record
+	public void WriteSettings() {
+		FileOutputStream fOut = null;
+		ObjectOutputStream osw = null;
+		try {
+			fOut = openFileOutput("records", MODE_PRIVATE);
+			osw = new ObjectOutputStream(fOut);
+			osw.writeObject(recordList);
+			osw.flush();
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				osw.close();
+				fOut.close();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+	}
+
+	@SuppressWarnings("unchecked")
+	private void readRecordFromFile() {
+		FileInputStream fileInputStream = null;
+		ObjectInputStream objectInputStream = null;
+		try {
+			fileInputStream = openFileInput("records");
+			objectInputStream = new ObjectInputStream(fileInputStream);
+			recordList = (ArrayList<String>) objectInputStream.readObject();
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (StreamCorruptedException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		}
 	}
 
 	private void setIterationTime() {
@@ -166,4 +221,5 @@ public class CalculationResultActivity extends Activity implements Runnable {
 		TextView txtInfoHeader = (TextView) findViewById(R.id.txtInfoHeader);
 		txtInfoHeader.setText(infoHeader);
 	}
+
 }

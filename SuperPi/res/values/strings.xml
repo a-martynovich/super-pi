@@ -20,12 +20,6 @@
 	<string name="unit_256k">[256K]</string>
 	<string name="result_512k">Not calculated.</string>
 	<string name="unit_512k">[512K]</string>
-	<string name="result_1m">Not calculated.</string>
-	<string name="unit_1m">[1M]</string>
-	<string name="result_2m">Not calculated.</string>
-	<string name="unit_2m">[2M]</string>
-	<string name="result_4m">Not calculated.</string>
-	<string name="unit_4m">[4M]</string>
 	<string name="select_digit">Select digits of Pi to be calculated.</string>
 	<string name="memory_block_size">Memory Block Size </string>
 	<string name="cache_l1_size">Cache L1 Size </string>
