@@ -27,6 +27,15 @@ public class Pi {
 	private String iterationTimeStamp;
 	private String totalElapsedTime;
 	private String totalElapsedTimeStamp;
+	private String piResult;
+
+	private void setPiResult(String piResult) {
+		this.piResult = piResult;
+	}
+
+	public String getPiResult() {
+		return piResult;
+	}
 
 	public String getTotalElapsedTimeStamp() {
 		return totalElapsedTimeStamp;
@@ -691,7 +700,6 @@ public class Pi {
 
 			checkAlive();
 
-
 			time = System.currentTimeMillis();
 			a = a.add(b);
 			t = four.multiply(t);
@@ -1102,11 +1110,8 @@ public class Pi {
 		long time = System.currentTimeMillis();
 		Apfloat pi = operation.execute();
 		time = System.currentTimeMillis() - time;
-
 		pi.writeTo(Pi.out, true);
-		Pi.out.println();
-		Pi.out.flush();
-
+		setPiResult(pi.toString());
 		setTotalElapsedTime("Total elapsed time");
 		setTotalElapsedTimeStamp(time / 1000.0 + " seconds");
 		calculationResultActivity.getHandler().sendEmptyMessage(4);

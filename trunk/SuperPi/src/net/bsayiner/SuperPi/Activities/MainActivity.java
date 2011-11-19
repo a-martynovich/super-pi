@@ -13,9 +13,14 @@ import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnClickListener;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager.NameNotFoundException;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -30,6 +35,41 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main);
 		calculationIntent = new Intent(this, CalculationResultActivity.class);
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		MenuInflater menuInflater = getMenuInflater();
+		menuInflater.inflate(R.menu.menu_layout, menu);
+		return true;
+	}
+
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		switch (item.getItemId()) {
+		case R.id.about_menu:
+			PackageInfo packageInfo = null;
+			try {
+				packageInfo = getPackageManager().getPackageInfo("net.bsayiner.benchmark.SuperPi", 0);
+			} catch (NameNotFoundException e) {
+				e.printStackTrace();
+			}
+			final AlertDialog.Builder alert = new AlertDialog.Builder(this);
+			alert.setTitle("SuperPi v" + packageInfo.versionName);
+			alert.setMessage("Copyright (C) 2011 Bora SAYINER\nEmail : bsayiner@bsayiner.net");
+			alert.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+				public void onClick(DialogInterface dialog, int which) {
+					dialog.cancel();
+				}
+			});
+			alert.show();
+			return true;
+		case R.id.exit_menu:
+			System.exit(0);
+			return true;
+		default:
+			return super.onOptionsItemSelected(item);
+		}
 	}
 
 	@Override
