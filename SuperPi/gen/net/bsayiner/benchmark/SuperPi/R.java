@@ -17,47 +17,57 @@ public final class R {
         public static final int layout_text_color=0x7f050000;
     }
     public static final class drawable {
-        public static final int background=0x7f020000;
-        public static final int icon=0x7f020001;
-        public static final int not_ok=0x7f020002;
-        public static final int ok=0x7f020003;
+        public static final int about=0x7f020000;
+        public static final int background=0x7f020001;
+        public static final int exit=0x7f020002;
+        public static final int icon=0x7f020003;
+        public static final int not_ok=0x7f020004;
+        public static final int ok=0x7f020005;
+        public static final int pi=0x7f020006;
     }
     public static final class id {
-        public static final int btnCalculate=0x7f08001d;
-        public static final int img128k=0x7f080017;
-        public static final int img16k=0x7f080011;
-        public static final int img256k=0x7f080019;
-        public static final int img2k=0x7f08000b;
-        public static final int img32k=0x7f080013;
-        public static final int img4k=0x7f08000d;
-        public static final int img512k=0x7f08001b;
-        public static final int img64k=0x7f080015;
-        public static final int img8k=0x7f08000f;
-        public static final int layout_iteration_times=0x7f080007;
-        public static final int layout_main=0x7f080000;
-        public static final int txt128K=0x7f080018;
-        public static final int txt16K=0x7f080012;
-        public static final int txt256K=0x7f08001a;
-        public static final int txt2K=0x7f08000c;
-        public static final int txt32K=0x7f080014;
-        public static final int txt4K=0x7f08000e;
-        public static final int txt512K=0x7f08001c;
-        public static final int txt64K=0x7f080016;
-        public static final int txt8K=0x7f080010;
-        public static final int txtBlockSize=0x7f080005;
-        public static final int txtCacheBurst=0x7f080004;
-        public static final int txtCacheL1Size=0x7f080002;
-        public static final int txtCacheL2Size=0x7f080003;
-        public static final int txtCalculationAlgorithm=0x7f080009;
-        public static final int txtInfoHeader=0x7f080008;
-        public static final int txtIterationInfo=0x7f08000a;
-        public static final int txtMemoryBlockSize=0x7f080001;
-        public static final int txtNumberOfProcessor=0x7f080006;
+        public static final int about_menu=0x7f09001e;
+        public static final int btnCalculate=0x7f09001d;
+        public static final int exit_menu=0x7f09001f;
+        public static final int img128k=0x7f090017;
+        public static final int img16k=0x7f090011;
+        public static final int img256k=0x7f090019;
+        public static final int img2k=0x7f09000b;
+        public static final int img32k=0x7f090013;
+        public static final int img4k=0x7f09000d;
+        public static final int img512k=0x7f09001b;
+        public static final int img64k=0x7f090015;
+        public static final int img8k=0x7f09000f;
+        public static final int layout_iteration_times=0x7f090007;
+        public static final int layout_main=0x7f090000;
+        public static final int show_pi=0x7f090020;
+        public static final int txt128K=0x7f090018;
+        public static final int txt16K=0x7f090012;
+        public static final int txt256K=0x7f09001a;
+        public static final int txt2K=0x7f09000c;
+        public static final int txt32K=0x7f090014;
+        public static final int txt4K=0x7f09000e;
+        public static final int txt512K=0x7f09001c;
+        public static final int txt64K=0x7f090016;
+        public static final int txt8K=0x7f090010;
+        public static final int txtBlockSize=0x7f090005;
+        public static final int txtCacheBurst=0x7f090004;
+        public static final int txtCacheL1Size=0x7f090002;
+        public static final int txtCacheL2Size=0x7f090003;
+        public static final int txtCalculationAlgorithm=0x7f090009;
+        public static final int txtInfoHeader=0x7f090008;
+        public static final int txtIterationInfo=0x7f09000a;
+        public static final int txtMemoryBlockSize=0x7f090001;
+        public static final int txtNumberOfProcessor=0x7f090006;
     }
     public static final class layout {
         public static final int calculate_layout=0x7f030000;
         public static final int main=0x7f030001;
         public static final int splash_layout=0x7f030002;
+    }
+    public static final class menu {
+        public static final int menu_layout=0x7f080000;
+        public static final int show_pi_menu=0x7f080001;
     }
     public static final class string {
         public static final int app_name=0x7f070000;

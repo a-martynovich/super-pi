@@ -19,11 +19,16 @@ import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnClickListener;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager.NameNotFoundException;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
@@ -45,6 +50,49 @@ public class CalculationResultActivity extends Activity implements Runnable {
 		pi = new Pi(this);
 		initSystemValues();
 		showDialog(0);
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		MenuInflater menuInflater = getMenuInflater();
+		menuInflater.inflate(R.menu.show_pi_menu, menu);
+		return true;
+	}
+
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		switch (item.getItemId()) {
+		case R.id.about_menu:
+			PackageInfo packageInfo = null;
+			try {
+				packageInfo = getPackageManager().getPackageInfo("net.bsayiner.benchmark.SuperPi", 0);
+			} catch (NameNotFoundException e) {
+				e.printStackTrace();
+			}
+			final AlertDialog.Builder alert = new AlertDialog.Builder(this);
+			alert.setTitle("SuperPi v" + packageInfo.versionName);
+			alert.setMessage("Copyright (C) 2011 Bora SAYINER\nEmail : bsayiner@bsayiner.net");
+			alert.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+				public void onClick(DialogInterface dialog, int which) {
+					dialog.cancel();
+				}
+			});
+			alert.show();
+			return true;
+		case R.id.show_pi:
+			final AlertDialog.Builder alert1 = new AlertDialog.Builder(this);
+			alert1.setTitle("Calculated digit of Pi");
+			alert1.setMessage(pi.getPiResult());
+			alert1.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+				public void onClick(DialogInterface dialog, int which) {
+					dialog.cancel();
+				}
+			});
+			alert1.show();
+			return true;
+		default:
+			return super.onOptionsItemSelected(item);
+		}
 	}
 
 	private void initSystemValues() {
