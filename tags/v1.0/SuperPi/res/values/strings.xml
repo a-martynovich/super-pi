@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">Super Pi</string>
+	<string name="not_ok">-</string>
+	<string name="result_2k">Not calculated.</string>
+	<string name="unit_2k">[2K]</string>
+	<string name="result_4k">Not calculated.</string>
+	<string name="unit_4k">[4K]</string>
+	<string name="result_8k">Not calculated.</string>
+	<string name="unit_8k">[8K]</string>
+	<string name="result_16k">Not calculated.</string>
+	<string name="unit_16k">[16K]</string>
+	<string name="result_32k">Not calculated.</string>
+	<string name="unit_32k">[32K]</string>
+	<string name="result_64k">Not calculated.</string>
+	<string name="unit_64k">[64K]</string>
+	<string name="result_128k">Not calculated.</string>
+	<string name="unit_128k">[128K]</string>
+	<string name="result_256k">Not calculated.</string>
+	<string name="unit_256k">[256K]</string>
+	<string name="result_512k">Not calculated.</string>
+	<string name="unit_512k">[512K]</string>
+	<string name="select_digit">Select digits of Pi to be calculated.</string>
+	<string name="memory_block_size">Memory Block Size </string>
+	<string name="cache_l1_size">Cache L1 Size </string>
+	<string name="cache_l2_size">Cache L2 Size </string>
+	<string name="cache_burst">Cache Burst </string>
+	<string name="block_size">Block Size </string>
+	<string name="number_of_processor">Number Of Processor </string>
+</resources>

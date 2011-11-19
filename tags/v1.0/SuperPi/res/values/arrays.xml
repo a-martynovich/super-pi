@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="unit_names">
+		<item>2K</item>
+		<item>4K</item>
+		<item>8K</item>
+		<item>16K</item>
+		<item>32K</item>
+		<item>64K</item>
+		<item>128K</item>
+		<item>256K</item>
+		<item>512K</item>
+	</string-array>
+</resources>
